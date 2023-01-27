@@ -1,0 +1,8 @@
+version: "3"
+services:
+  kafka:
+    build:
+      context: build/kafka
+      dockerfile: Dockerfile
+    ports:
+      - '9092:9092'
