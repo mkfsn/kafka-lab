@@ -74,6 +74,7 @@ func main() {
 		}
 	}(ctx, logger.WithGroup("producer"))
 
+	logger.Info("press Ctrl+C to stop program")
 	<-ctx.Done()
 	logger.Info("graceful shutdown")
 }
